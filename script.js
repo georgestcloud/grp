@@ -307,3 +307,25 @@ document.addEventListener("DOMContentLoaded", function() {
 
   countUp();
 });
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const countNumber = document.querySelector('.count-number');
+  const finalText = document.querySelector('.final-text');
+  const duration = parseInt(countNumber.getAttribute('data-duration'));
+  const toValue = parseInt(countNumber.getAttribute('data-to-value'));
+  const interval = duration / toValue;
+
+  let currentValue = 0;
+  const intervalId = setInterval(function() {
+    countNumber.textContent = currentValue++;
+    if (currentValue > toValue) {
+      clearInterval(intervalId);
+      countNumber.textContent = toValue;
+      finalText.style.display = 'block';
+    }
+  }, interval);
+});
