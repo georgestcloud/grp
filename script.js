@@ -335,3 +335,33 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }, interval);
 });
+
+
+
+
+
+
+
+
+
+
+
+function countdown(start, end, duration) {
+  const element = document.querySelector('.moses-countdown');
+  const totalSteps = Math.abs(end - start);
+  const stepDuration = duration / totalSteps;
+
+  let current = start;
+  const step = (start < end) ? 1 : -1;
+
+  const interval = setInterval(() => {
+      element.innerHTML = current + ' <span class="jess">MWH</span>';
+      current += step;
+
+      if (current === end + step) {
+          clearInterval(interval);
+      }
+  }, stepDuration);
+}
+
+countdown(0, 500, 5000);
