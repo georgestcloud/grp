@@ -312,6 +312,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', function() {
   const countNumber = document.querySelector('.count-number');
   const finalText = document.querySelector('.final-text');
