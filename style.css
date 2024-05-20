@@ -3,6 +3,9 @@ body {
   color: black;
   font-size: 15px;
 }
+
+.kala { color: #B8705D; }
+
 @media (max-width: 800px) {
   .eze {
     font-size: 15px;
