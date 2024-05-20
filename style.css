@@ -771,3 +771,46 @@ font-weight: bold;
   font-size: 1em;
   color: white;
 }
+
+
+
+
+
+
+
+
+
+.counter {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+}
+.cloud-count {
+  display: inline-block;
+  position: relative;
+}
+.count-number {
+  display: inline-block;
+  line-height: 100px;
+  color: white;
+  font-size: 32px;
+  animation: countUp 4s forwards;
+}
+.count-suffix {
+  font-size: 16px;
+}
+.final-text {
+  display: none;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+.sub-text {
+  font-size: 16px;
+  margin-top: 10px;
+}
+@keyframes countUp {
+  from { transform: scale(1); }
+  to { transform: scale(1.5); }
+}
