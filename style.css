@@ -854,3 +854,37 @@ font-weight: bold;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+.elijah-container {
+  display: flex;
+  height: 10px;
+  z-index: 3;
+  font-weight: bolder;
+  font-size: 50px;
+  color: white;
+
+}
+
+.moses-countdown {
+  color: white;
+  z-index: 3;
+
+}
+
+
+.jess {
+  color: white;
+  font-size: 30px;
+  padding-left: 20px;
+}
