@@ -25,7 +25,7 @@ body {
 
 h1 {
   color: #Ab5943;
-  font-size: 25px;
+  font-size: 27px;
 }
 
 @media (min-width: 200px) {
@@ -762,7 +762,9 @@ font-weight: bold;
 }
 
 .counter-suffix {
-  font-size: 0.6em;
+  
+  font-size: 30px;
+  margin-left: 30px;
   color: white;
 }
 
@@ -771,6 +773,40 @@ font-weight: bold;
   font-size: 1em;
   color: white;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -797,9 +833,7 @@ font-weight: bold;
   font-size: 32px;
   animation: countUp 4s forwards;
 }
-.count-suffix {
-  font-size: 16px;
-}
+
 .final-text {
   display: none;
   font-size: 24px;
@@ -814,3 +848,6 @@ font-weight: bold;
   from { transform: scale(1); }
   to { transform: scale(1.5); }
 }
+
+
+
