@@ -1,9 +1,11 @@
 body {
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   color: black;
+  font-size: 15px;
 }
 @media (max-width: 800px) {
   .eze {
+    font-size: 15px;
     padding: 12px;
   }
 }
@@ -23,7 +25,7 @@ body {
 
 h1 {
   color: #Ab5943;
-  font-size: 27px;
+  font-size: 25px;
 }
 
 @media (min-width: 200px) {
@@ -56,7 +58,8 @@ h1 {
 }
 
 .flex-item-right {
-  font-size: 19px;
+  font-size: 15px;
+
   background-color: white;
   padding: 0px 50px 0px 30px;
   flex: 50%;
@@ -71,6 +74,7 @@ h1 {
 /* Responsive layout - makes a one column-layout instead of two-column layout */
 @media (max-width: 800px) {
   .flex-container {
+    justify-content: center;
     flex-direction: column;
   }
   .flex-item-left {
@@ -254,11 +258,7 @@ font-weight: bold;
   opacity: 0.5;
 }
 
-@media (max-width: 800px) {
-  .flex-container {
-    justify-content: center; /* Center flex items horizontally */
-  }
-}
+
 
 
 
