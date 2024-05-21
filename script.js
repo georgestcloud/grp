@@ -170,7 +170,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
       
       const modalBody = document.createElement("div");
       modalBody.classList.add("modal-body");
-      modalBody.innerHTML = `
+      modalBody.innerHTML = ` 
           <p>
               <span>G</span><span>R</span><span>E</span><span>E</span><span>N</span>
               <span>I</span><span>N</span><span>F</span><span>R</span><span>A</span><span>S</span><span>T</span><span>R</span><span>U</span><span>C</span><span>T</span><span>U</span><span>R</span><span>E</span>
@@ -187,6 +187,20 @@ document.addEventListener('DOMContentLoaded', (event) => {
           <p>
               The Mill City Solar PV Project aims to reduce reliance on carbon-based fuels, achieve renewable energy targets, and lower greenhouse gas emissions, reflecting the company's commitment to environmental sustainability and clean energy.
           </p>
+          <p>The Project will also feature a Marine Wildlife Conservation Centre and a Biogas Generation Project to be driven by (WHB) Water Hyacinth Biomass in partnership with the World Wildlife Fund.   </p>
+
+    
+          <br>
+          <b>The Mill City Solar PV Project will :</b><br>
+          <ul>
+            <li>Reduce energy dependence on carbon-based fuels.</li>
+            <li>Meet renewable energy targets.</li>
+            <li>Reduce greenhouse gas emission rates.</li>
+           
+          </ul>
+          
+    
+
       `;
       
       modalContent.appendChild(modalHeader);
@@ -346,6 +360,27 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function countdown(start, end, duration) {
   const element = document.querySelector('.moses-countdown');
   const totalSteps = Math.abs(end - start);
@@ -364,4 +399,4 @@ function countdown(start, end, duration) {
   }, stepDuration);
 }
 
-countdown(0, 500, 5000);
+countdown(0, 500, 4000);
