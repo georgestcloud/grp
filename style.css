@@ -42,9 +42,6 @@ h1 {
 
 
 
-.navbar {
-  padding-top: 2px;
-}
 
 .flex-container {
   padding-bottom: 50px;
@@ -93,45 +90,12 @@ h1 {
   }
 }
 
-@media screen and (max-width: 800px) {
-  .navbar-brand img {
-      width: 100px; 
-      height: 100px; 
-  }
-  .navbar-brand {
-    padding-left: 2px;
-  }
-}
 
 .carousel-item img {
     height: 310px;
 }
 
-.navbar-brand {
-  padding-left: 8px;
-}
 
-.navbar-toggler:hover {
-  background-color: #Ab5943; 
-}
-
-.nav-item {
-  padding: 10px;
-}
-
-.nav-link {
-font-weight: bold;
-  font-size: 16px;
-  color:  black; 
-}
-
-.navbar-nav .nav-link {
-  padding: 5px;
-}
-
-.nav-link:hover {
-  color: #Ab5943; 
-}
 
 .carousel-swipe {
   position: absolute;
@@ -662,7 +626,7 @@ font-weight: bold;
 
 
 
-
+  .dog { font-size: 20px}
 
 
 
@@ -1016,7 +980,7 @@ margin-bottom: 10px;
 
 
 
-.dog { font-size: 20px}
+
 
 
 
@@ -1030,3 +994,98 @@ margin-bottom: 10px;
 }
 .w3-third { text-align: center;
 font-style: bold;}
+
+
+
+
+
+
+
+
+
+
+
+    /* Navbar styles */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+      padding: 10px;
+    }
+
+    .navbar img {
+      width: 155px;
+      height: 115px;
+    }
+
+    .nav-list {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-list li {
+      margin-right: 10px;
+    }
+
+    .nav-list a {
+      color: black;
+      font-style: bold;
+      text-decoration: none;
+      padding: 10px;
+      display: block;
+      transition: background-color 0.3s ease;
+    }
+
+    .nav-list a:hover {
+      background-color: #D6A295;
+    }
+
+    .menu-button {
+      display: none;
+      font-size: 35px;
+      color: #Ab5943; /* Font color black */
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      right: 10px;
+      top: 60px;
+      background-color: white;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+        z-index: 3;
+      color: black; 
+      padding: 10px 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #D6A295;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 800px) {
+      .nav-list {
+        display: none;
+      }
+      .menu-button {
+        display: block;
+      }
+    }
+
+    @media (max-width: 800px), (hover: none) {
+      .dropdown-content.show {
+        display: block;
+      }
+    }
