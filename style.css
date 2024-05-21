@@ -914,3 +914,113 @@ margin-bottom: 10px;
   height: 70px; 
   color: white;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pill-button {
+  display: inline-block;
+  width: 150px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 25px;
+  background-color: #Ab5943;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: inherit;
+  text-align: center;
+  position: relative;
+}
+
+.pill-button:hover {
+  background-color: gold; 
+}
+
+
+.dropdown-toggle:hover {
+  background-color: gold; 
+}
+
+
+.hidden-dropdown {
+  display: none;
+}
+
+.visible-dropdown {
+  display: block;
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  z-index: 3;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 270px;
+  height: auto; 
+  max-height: auto; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  white-space: normal; 
+}
+
+.placeholder-content {
+  white-space: normal; 
+}
+
+
+
+
+
+
+
+
+
+
+.address {
+  display: flex;
+  align-items: center;
+}
+.azonto {
+  text-align: center;
+}
+.w3-third { text-align: center;
+font-style: bold;}
