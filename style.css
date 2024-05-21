@@ -294,14 +294,18 @@ font-weight: bold;
         }
 
         .custom-list li {
-            padding-top: 25px;
+            padding-top: 19px;
+        }
+ .custom-list li a {
+            text-decoration: none;
+            font-size: large; 
+            color: black;
+            transition: color 0.3s ease;
         }
 
-        .custom-list li a {
-            text-decoration: none; 
-            color: #Ab5943;
-        }
-
+        .custom-list li a:hover {
+          color: gold; /* color on hover */
+      }
 
 
 
