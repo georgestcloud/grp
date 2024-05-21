@@ -430,7 +430,7 @@ font-weight: bold;
   position: relative;
   overflow: hidden;
   background-size: cover;
-  height: 100%px; /* Adjust height as needed */
+  height: 100%; 
 }
 
 .new-container-overlay {
@@ -439,8 +439,8 @@ font-weight: bold;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(214, 162, 149, 0.5); /* Adjust opacity as needed */
-  z-index: 2;
+  background-color: #B8705D;
+  z-index: 1;
 }
 
 
