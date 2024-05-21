@@ -871,6 +871,8 @@ font-weight: bold;
 
 
 .elijah-container {
+  justify-content: center;
+  text-align: center;
   display: flex;
   z-index: 3;
   font-weight: bolder;
