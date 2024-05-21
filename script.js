@@ -187,6 +187,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
           <p>
               The Mill City Solar PV Project aims to reduce reliance on carbon-based fuels, achieve renewable energy targets, and lower greenhouse gas emissions, reflecting the company's commitment to environmental sustainability and clean energy.
           </p>
+
+<P> The power generation plant is to be connected to the West African Power Pool via a 440V HVDC Submarine Transmission cable that will originate from Iwopin, Nigeria and terminate in Sakete, Benin Republic in the first phase. </p>
+
+
+          
           <p>The Project will also feature a Marine Wildlife Conservation Centre and a Biogas Generation Project to be driven by (WHB) Water Hyacinth Biomass in partnership with the World Wildlife Fund.   </p>
 
     
