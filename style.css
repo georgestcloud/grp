@@ -31,12 +31,13 @@ h1 {
   font-size: 27px;
 }
 
-@media (min-width: 200px) {
-  h1 {
-    font-size: 22px;
-  }
-}
 
+@media (max-width: 800px) {
+    h1 {
+        font-size: 25px; 
+        text-align: center; 
+    }
+}
 
 
 
