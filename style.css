@@ -243,6 +243,7 @@ font-weight: bold;
 }
 
 .custom-container {
+  z-index: 0;
     position: relative;
     overflow: hidden; 
     background-image: url('pol.jpg'); 
