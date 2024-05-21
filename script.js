@@ -447,11 +447,11 @@ document.getElementById('showDropdownBtn').addEventListener('click', function(ev
 
   // Create the placeholder content as HTML
   const placeholderContent = `
-    <ul>
-      <li><span><strong class="kala"> Habitat Restoration: </strong> We will support the restoration of critical habitats, such as seagrass beds, which are essential for the survival of manatees.</span></li> <hr>
-      <li><span><strong class="kala"> Awareness and Education: </strong> Through community outreach programs, we will raise awareness about the importance of manatee conservation and promote practices that reduce human impact on their populations.</span></li>
-     <hr> <li><span><strong class="kala"> Research and Monitoring: </strong> Collaborating with WWF, we will fund and participate in research projects to monitor manatee populations and health, informing better conservation strategies.</span></li>
-    </ul><hr>
+    
+      <p><span><strong class="kala"> Habitat Restoration: </strong> We will support the restoration of critical habitats, such as seagrass beds, which are essential for the survival of manatees.</span></p> <hr>
+      <p><span><strong class="kala"> Awareness and Education: </strong> Through community outreach programs, we will raise awareness about the importance of manatee conservation and promote practices that reduce human impact on their populations.</span></p>
+     <hr> <p><span><strong class="kala"> Research and Monitoring: </strong> Collaborating with WWF, we will fund and participate in research projects to monitor manatee populations and health, informing better conservation strategies.</span></p>
+    <hr>
     <p>By addressing the challenges posed by Water Hyacinth and focusing on manatee conservation, Green Infrastructure and Power Investments Plc demonstrates a deliberate and impactful commitment to environmental sustainability. Our initiatives not only curb ecological threats but also foster a harmonious coexistence between renewable energy development and biodiversity preservation.</p>
   `;
 
