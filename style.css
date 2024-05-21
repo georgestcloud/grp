@@ -41,7 +41,6 @@ h1 {
 
 
 .navbar {
-  padding-bottom: 2px;
   padding-top: 2px;
 }
 
@@ -103,7 +102,7 @@ h1 {
 }
 
 .carousel-item img {
-    height: 330px;
+    height: 310px;
 }
 
 .navbar-brand {
@@ -111,7 +110,7 @@ h1 {
 }
 
 .navbar-toggler:hover {
-  background-color: gold; 
+  background-color: #Ab5943; 
 }
 
 .nav-item {
@@ -120,17 +119,16 @@ h1 {
 
 .nav-link {
 font-weight: bold;
-  font-size: 17px;
+  font-size: 16px;
   color:  black; 
-  font-weight: 500;
 }
 
 .navbar-nav .nav-link {
-  padding: 15px;
+  padding: 5px;
 }
 
 .nav-link:hover {
-  color: gold; 
+  color: #Ab5943; 
 }
 
 .carousel-swipe {
