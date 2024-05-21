@@ -394,7 +394,7 @@ function countdown(start, end, duration) {
   const step = (start < end) ? 1 : -1;
 
   const interval = setInterval(() => {
-      element.innerHTML = current + ' <span class="jess">MWH</span>';
+      element.innerHTML = current + ' <span class="jess">MWh BESS</span>';
       current += step;
 
       if (current === end + step) {
