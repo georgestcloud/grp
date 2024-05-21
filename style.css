@@ -1020,6 +1020,7 @@ font-style: bold;}
     }
 
     .nav-list {
+      font-weight: bolder;
       display: flex;
       list-style: none;
       margin: 0;
@@ -1089,3 +1090,10 @@ font-style: bold;}
         display: block;
       }
     }
+
+
+
+.navbar {
+  padding: 0 !important; /* Remove padding */
+  margin: 0 !important;  /* Remove margin if any */
+}
