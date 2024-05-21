@@ -423,7 +423,6 @@ font-weight: bold;
 .new-custom-container {
   position: relative;
   overflow: hidden;
-  background-image: url('pol.jpg');
   background-size: cover;
   height: 100%px; /* Adjust height as needed */
 }
