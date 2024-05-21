@@ -61,9 +61,8 @@ h1 {
 
 .flex-item-right {
   font-size: 15px;
-
   background-color: white;
-  padding: 0px 50px 0px 30px;
+  padding: 80px 50px 0px 30px;
   flex: 50%;
 }
 
@@ -85,6 +84,7 @@ h1 {
     padding-right: 0;
   }
   .flex-item-right {
+    padding-top: 40px;
       padding-left: 0;
     padding-right: 0;
     font-size: 15px;
