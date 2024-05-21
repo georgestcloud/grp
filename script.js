@@ -188,10 +188,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
               The Mill City Solar PV Project aims to reduce reliance on carbon-based fuels, achieve renewable energy targets, and lower greenhouse gas emissions, reflecting the company's commitment to environmental sustainability and clean energy.
           </p>
 
-<P> The power generation plant is to be connected to the West African Power Pool via a 440V HVDC Submarine Transmission cable that will originate from Iwopin, Nigeria and terminate in Sakete, Benin Republic in the first phase. </p>
+          <P> The power generation plant is to be connected to the West African Power Pool via a 440V HVDC Submarine Transmission cable that will originate from Iwopin, Nigeria and terminate in Sakete, Benin Republic in the first phase. </p>
 
 
-          
           <p>The Project will also feature a Marine Wildlife Conservation Centre and a Biogas Generation Project to be driven by (WHB) Water Hyacinth Biomass in partnership with the World Wildlife Fund.   </p>
 
     
@@ -405,3 +404,75 @@ function countdown(start, end, duration) {
 }
 
 countdown(0, 500, 4000);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.getElementById('showDropdownBtn').addEventListener('click', function(event) {
+  // Check if the dropdown already exists and remove it
+  const existingDropdown = document.querySelector('.visible-dropdown');
+  if (existingDropdown) {
+    existingDropdown.remove();
+    return; // Exit the function to prevent re-creating the dropdown
+  }
+
+  // Create the dropdown div
+  const dropdown = document.createElement('div');
+  dropdown.classList.add('visible-dropdown');
+
+  // Create the placeholder content as HTML
+  const placeholderContent = `
+    <ul>
+      <li><span><strong class="kala"> Habitat Restoration: </strong> We will support the restoration of critical habitats, such as seagrass beds, which are essential for the survival of manatees.</span></li>
+      <li><span><strong class="kala"> Awareness and Education: </strong> Through community outreach programs, we will raise awareness about the importance of manatee conservation and promote practices that reduce human impact on their populations.</span></li>
+      <li><span><strong class="kala"> Research and Monitoring: </strong> Collaborating with WWF, we will fund and participate in research projects to monitor manatee populations and health, informing better conservation strategies.</span></li>
+    </ul>
+    <p>By addressing the challenges posed by Water Hyacinth and focusing on manatee conservation, Green Infrastructure and Power Investments Plc demonstrates a deliberate and impactful commitment to environmental sustainability. Our initiatives not only curb ecological threats but also foster a harmonious coexistence between renewable energy development and biodiversity preservation.</p>
+  `;
+
+  // Set the placeholder content
+  dropdown.innerHTML = placeholderContent;
+
+  // Get the position of the button
+  const button = document.getElementById('showDropdownBtn');
+  const rect = button.getBoundingClientRect();
+
+  dropdown.style.position = 'absolute';
+  dropdown.style.top = `${rect.bottom + window.scrollY}px`; // Position below the button
+  dropdown.style.left = `${rect.left + window.scrollX}px`; // Align with the left side of the button
+
+  document.body.appendChild(dropdown);
+
+  document.body.addEventListener('click', function(event) {
+    if (!dropdown.contains(event.target) && event.target !== button) {
+      dropdown.remove();
+    }
+  });
+  
+  event.stopPropagation();
+});
