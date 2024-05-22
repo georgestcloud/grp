@@ -329,7 +329,7 @@ body {
   
   .right-panel {
     text-align: center;
-    z-index: 9999;
+    z-index: 50;
     flex: 1; 
     padding: 75px 20px 20px 20px;
     box-sizing: border-box;
@@ -541,7 +541,7 @@ body {
     .modal {
       display: none;
       position: fixed; /* Ensure it covers the entire viewport */
-      z-index: 1;
+      z-index: 999;
       left: 0;
       top: 0;
       width: 100%;
