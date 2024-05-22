@@ -333,6 +333,7 @@ h1 {
 }
 
 .right-panel {
+  z-index: 9999;
   flex: 1; 
   padding: 75px 20px 20px 20px;
   box-sizing: border-box;
