@@ -24,9 +24,7 @@ body {
   }
   
   
-  .card {
-    border: none; 
-  }
+
   
   h1 {
     color: black;
@@ -344,6 +342,7 @@ body {
         flex-direction: column; /* Stack items vertically */
     }
     .left-panel {
+      padding: 20px;
         width: 100%; /* Each panel takes full width */
     }
     .right-panel {
