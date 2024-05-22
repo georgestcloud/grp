@@ -324,13 +324,13 @@ body {
   
   
   .left-panel {
-    flex: 0 0 33%;
+    flex: 0 0 50%;
     padding: 20px;
     box-sizing: border-box;
   }
   
   .right-panel {
-    z-index: 1;
+    z-index: 9999;
     flex: 1; 
     padding: 75px 20px 20px 20px;
     box-sizing: border-box;
