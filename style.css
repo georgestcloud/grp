@@ -1,6 +1,5 @@
 body {
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-  color: black;
+font-family: 'Manrope', sans-serif;  color: black;
   font-size: 15px;
 }
 .navbar {
@@ -728,7 +727,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+font-family: 'Manrope', sans-serif;
 }
 
 .counter-number-wrapper {
