@@ -129,7 +129,7 @@ body {
   .carousel-pagination {
     border-top: 10px white;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
   }
   
   .carousel-pagination button {
@@ -138,7 +138,7 @@ body {
     height: 10px;
     margin-right: 5px;
     border: none;
-    background-color: black;
+    background-color: silver;
     cursor: pointer;
   }
   
@@ -361,9 +361,7 @@ body {
   }
   
   .card img {
-    width: 100px;
-    height: 100px;
-    border-radius: 20px; /* Make the image circular */
+    border-radius: 20px;
     object-fit: cover;
   }
   
@@ -1011,8 +1009,7 @@ body {
   
       /* Navbar styles */
       .navbar {
-          letter-spacing:0.6px;
-        font-weight: 800;
+        
         z-index: 3;
         display: flex;
         justify-content: space-between;
@@ -1030,8 +1027,8 @@ body {
   
       .nav-list {
         z-index: 3;
-        font-weight: bolder;
-        display: flex;
+        letter-spacing:0.6px;
+        font-weight: 5s00;        display: flex;
         list-style: none;
         margin: 0;
         padding: 0;
@@ -1045,7 +1042,6 @@ body {
       .nav-list a {
         z-index: 3;
         color: black;
-        font-style: bold;
         text-decoration: none;
         padding: 10px;
         display: block;
@@ -1219,20 +1215,20 @@ body {
     background: none;
     border: none;
     color: #Ab5943; 
-    font-size: 35px; 
+    font-size: 30px; 
     cursor: pointer;
     z-index: 999;
-    width: 40px; 
+    width: 20px; 
     height: 40px;
-    line-height: 40px;
+    line-height: 20px;
   }
   
   .carousel-swipe-left {
-    left: 13px; 
+    left: 20px; 
   }
   
   .carousel-swipe-right {
-    right: 13px;
+    right: 20px;
   }
   
   .carousel-control-prev-icon,
@@ -1241,18 +1237,17 @@ body {
   }
   
   .carousel-pagination {
-    border-top: 10px white;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
   }
   
   .carousel-pagination button {
     border-radius: 50%;
-    width: 10px;
-    height: 10px;
+    width: 13px;
+    height: 13px;
     margin-right: 5px;
     border: none;
-    background-color: black;
+    background-color: silver;
     cursor: pointer;
   }
   
@@ -1475,8 +1470,8 @@ body {
   }
   
   .card img {
-    width: 100px;
-    height: 100px;
+    width: 250px;
+    height: 200px;
     border-radius: 20px; /* Make the image circular */
     object-fit: cover;
   }
@@ -2131,7 +2126,7 @@ body {
         align-items: center;
         background-color: white;
         padding-left: 25px;
-        padding-right: 25px;
+        padding-right: 20px;
       }
   
       .navbar img {
@@ -2141,7 +2136,8 @@ body {
   
       .nav-list {
         z-index: 3;
-        font-weight: bolder;
+        font-weight: 600;
+        line-height: 0.7;
         display: flex;
         list-style: none;
         margin: 0;
@@ -2156,9 +2152,8 @@ body {
       .nav-list a {
         z-index: 3;
         color: black;
-        font-style: bold;
         text-decoration: none;
-        padding: 10px;
+       
         display: block;
         transition: background-color 0.3s ease;
       }
