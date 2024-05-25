@@ -535,3 +535,28 @@ document.getElementById('showDropdownBtn').addEventListener('click', function(ev
 
   window.addEventListener('resize', adjustMenuVisibility);
   window.addEventListener('load', adjustMenuVisibility);
+
+
+
+
+
+
+
+
+
+
+
+
+    document.querySelector('.custom-container').addEventListener('mousemove', function(e) {
+      const container = this;
+      const rect = container.getBoundingClientRect();
+      const mouseX = e.clientX - rect.left;
+      const mouseY = e.clientY - rect.top;
+
+      // Calculate the movement range
+      const moveX = (mouseX / rect.width - 0.5) * 2; // Adjust multiplier for effect strength
+      const moveY = (mouseY / rect.height - 0.5) * 2; // Adjust multiplier for effect strength
+
+      // Set the background position based on the mouse movement
+      container.style.backgroundPosition = `${50 - moveX * 50}% ${50 - moveY * 50}%`;
+    });
