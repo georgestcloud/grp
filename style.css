@@ -361,8 +361,8 @@ h1 {
 }
 
 .card img {
-  width: 130px;
-  height: 100px;
+  width: 250px;
+  height: 180px;
   border-radius: 20px; 
   object-fit: cover;
 }
