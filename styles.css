@@ -27,6 +27,13 @@ body {
     z-index: 0;
     position: relative;
 }
+
+
+@media (max-width: 800px) {
+    .caption {
+        font-size: 23px;
+    }
+}
   
   .caption {
     position: absolute;
