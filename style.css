@@ -1011,9 +1011,9 @@ body {
       }
   
       .navbar img {
-        padding-left: 15px;
-        width: 175px;
-        height: 110px;
+        padding-left: 10px;
+        max-width: 220px;
+        height: 120px;
       }
   
       .nav-list {
