@@ -26,3 +26,30 @@ function adjustMenuVisibility() {
 
 window.addEventListener('resize', adjustMenuVisibility);
 window.addEventListener('load', adjustMenuVisibility);
+
+
+
+
+
+
+
+
+
+document.querySelector('.image-container').addEventListener('mousemove', function(event) {
+  const container = event.currentTarget;
+  const img = container.querySelector('img');
+  const rect = container.getBoundingClientRect();
+  const x = event.clientX - rect.left - rect.width / 2; // X-coordinate relative to the center of the container
+  const y = event.clientY - rect.top - rect.height / 2; // Y-coordinate relative to the center of the container
+
+  const moveX = -x / 20; // Adjust the value to control movement intensity
+  const moveY = -y / 20; // Adjust the value to control movement intensity
+
+  img.style.transform = `translate(${moveX}px, ${moveY}px)`;
+});
+
+document.querySelector('.image-container').addEventListener('mouseleave', function(event) {
+  const container = event.currentTarget;
+  const img = container.querySelector('img');
+  img.style.transform = 'translate(0, 0)';
+});
