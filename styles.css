@@ -33,6 +33,7 @@ font-weight: bold;
 
 
 .green {
+  padding: 15px;
   display: flex;
 }
 
@@ -49,16 +50,6 @@ align-items: center;
 justify-content: center;
 }
 
-/* Media query for screens below 800px */
-@media (max-width: 800px) {
-  .green {
-      flex-direction: column;
-  }
-  .right, .left {
-      width: 100%;
-      height: 50vh; /* Adjust height as needed */
-  }
-}
 
   .image-container {
     position: relative;
