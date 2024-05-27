@@ -32,9 +32,6 @@ window.addEventListener('load', adjustMenuVisibility);
 
 
 
-
-
-
 document.querySelector('.image-container').addEventListener('mousemove', function(event) {
   const container = event.currentTarget;
   const img = container.querySelector('img');
@@ -58,18 +55,27 @@ document.querySelector('.image-container').addEventListener('mouseleave', functi
 
 
 
-  document.addEventListener("DOMContentLoaded", function() {
-      const toggleBtn = document.querySelector(".custom-toggle-btn");
-      const toggleContent = document.querySelector(toggleBtn.getAttribute("data-target"));
 
-      toggleBtn.addEventListener("click", function(event) {
-        toggleContent.classList.toggle("show");
-        event.stopPropagation(); 
-      });
 
-      document.addEventListener("click", function(event) {
-        if (!toggleContent.contains(event.target) && !toggleBtn.contains(event.target)) {
-          toggleContent.classList.remove("show");
-        }
-      });
-    });
+
+
+
+
+
+
+  // Function to open a modal
+  function openModal(modalId) {
+    document.getElementById(modalId).style.display = "flex";
+  }
+
+  // Function to close a modal
+  function closeModal(modalId) {
+    document.getElementById(modalId).style.display = "none";
+  }
+
+  // Close the modal when clicking outside of the modal content
+  window.onclick = function(event) {
+    if (event.target.classList.contains('modal')) {
+      closeModal(event.target.id);
+    }
+  }
