@@ -53,3 +53,23 @@ document.querySelector('.image-container').addEventListener('mouseleave', functi
   const img = container.querySelector('img');
   img.style.transform = 'translate(0, 0)';
 });
+
+
+
+
+
+  document.addEventListener("DOMContentLoaded", function() {
+      const toggleBtn = document.querySelector(".custom-toggle-btn");
+      const toggleContent = document.querySelector(toggleBtn.getAttribute("data-target"));
+
+      toggleBtn.addEventListener("click", function(event) {
+        toggleContent.classList.toggle("show");
+        event.stopPropagation(); 
+      });
+
+      document.addEventListener("click", function(event) {
+        if (!toggleContent.contains(event.target) && !toggleBtn.contains(event.target)) {
+          toggleContent.classList.remove("show");
+        }
+      });
+    });
