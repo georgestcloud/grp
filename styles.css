@@ -289,3 +289,41 @@ font-weight: bold;
 
 
 
+.collapse { align-content: center;
+text-align: center;}
+
+
+
+
+
+
+
+.toggle-content {
+  display: none;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  max-height: 0;
+}
+
+.toggle-content.show {
+  display: block;
+  max-height: 1000px; /* Arbitrary large value to enable transition */
+}
+
+.custom-toggle-btn {
+  border-radius: 20px;
+  background-color: #D6A295; /* Default background color */
+  border: 1px solid #ccc;    /* Default border */
+  padding: 5px 10px;        /* Reduced padding */
+  font-size: 12px;          /* Smaller font size */
+  cursor: pointer;          /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.custom-toggle-btn:hover {
+  background-color: #Ab5943; /* Hover background color */
+  color: #fff;               /* Optional: change text color on hover */
+}
+
+
+.cow { padding-left: 35px;}
