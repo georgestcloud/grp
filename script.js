@@ -403,6 +403,27 @@ countdown(0, 500, 4000);
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 document.getElementById('showDropdownBtn').addEventListener('click', function(event) {
   // Check if the dropdown already exists and remove it
   const existingDropdown = document.querySelector('.visible-dropdown');
@@ -415,12 +436,29 @@ document.getElementById('showDropdownBtn').addEventListener('click', function(ev
   const dropdown = document.createElement('div');
   dropdown.classList.add('visible-dropdown');
 
+  // Create the close button
+  const closeButton = document.createElement('button');
+  closeButton.innerText = 'Close';
+  closeButton.style.position = 'absolute';
+  closeButton.style.top = '10px';
+  closeButton.style.right = '10px';
+  closeButton.style.backgroundColor = 'red';
+  closeButton.style.color = 'white';
+  closeButton.style.border = 'none';
+  closeButton.style.padding = '10px';
+  closeButton.style.cursor = 'pointer';
+
+  // Add event listener to the close button
+  closeButton.addEventListener('click', function() {
+    dropdown.remove();
+  });
+
   // Create the placeholder content as HTML
   const placeholderContent = `
-    
-      <p><span><strong class="kala"> Habitat Restoration: </strong> We will support the restoration of critical habitats, such as seagrass beds, which are essential for the survival of manatees.</span></p> <hr>
-      <p><span><strong class="kala"> Awareness and Education: </strong> Through community outreach programs, we will raise awareness about the importance of manatee conservation and promote practices that reduce human impact on their populations.</span></p>
-     <hr> <p><span><strong class="kala"> Research and Monitoring: </strong> Collaborating with WWF, we will fund and participate in research projects to monitor manatee populations and health, informing better conservation strategies.</span></p>
+    <p><span><strong class="kala"> Habitat Restoration: </strong> We will support the restoration of critical habitats, such as seagrass beds, which are essential for the survival of manatees.</span></p> <hr>
+    <p><span><strong class="kala"> Awareness and Education: </strong> Through community outreach programs, we will raise awareness about the importance of manatee conservation and promote practices that reduce human impact on their populations.</span></p>
+    <hr>
+    <p><span><strong class="kala"> Research and Monitoring: </strong> Collaborating with WWF, we will fund and participate in research projects to monitor manatee populations and health, informing better conservation strategies.</span></p>
     <hr>
     <p>By addressing the challenges posed by Water Hyacinth and focusing on manatee conservation, Green Infrastructure and Power Investments Plc demonstrates a deliberate and impactful commitment to environmental sustainability. Our initiatives not only curb ecological threats but also foster a harmonious coexistence between renewable energy development and biodiversity preservation.</p>
   `;
@@ -428,24 +466,49 @@ document.getElementById('showDropdownBtn').addEventListener('click', function(ev
   // Set the placeholder content
   dropdown.innerHTML = placeholderContent;
 
-  // Get the position of the button
-  const button = document.getElementById('showDropdownBtn');
-  const rect = button.getBoundingClientRect();
+  // Style the dropdown to ensure it stays within the viewport and is centered
+  dropdown.style.position = 'fixed';
+  dropdown.style.top = '50%';
+  dropdown.style.left = '50%';
+  dropdown.style.transform = 'translate(-50%, -50%)';
+  dropdown.style.maxWidth = '90%';
+  dropdown.style.maxHeight = '90%';
+  dropdown.style.overflowY = 'auto';
+  dropdown.style.backgroundColor = '#fff';
+  dropdown.style.border = '1px solid #ccc';
+  dropdown.style.padding = '20px';
+  dropdown.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+  dropdown.style.zIndex = '1000'; // Ensure it appears above other content
+  dropdown.style.paddingTop = '100px'; // Add padding for the close button
 
-  dropdown.style.position = 'absolute';
-  dropdown.style.top = `${rect.bottom + window.scrollY}px`; // Position below the button
-  dropdown.style.left = `${rect.left + window.scrollX}px`; // Align with the left side of the button
+  // Append the close button to the dropdown
+  dropdown.appendChild(closeButton);
 
   document.body.appendChild(dropdown);
 
-  document.body.addEventListener('click', function(event) {
+  // Stop propagation when clicking on the dropdown itself
+  dropdown.addEventListener('click', function(event) {
+    event.stopPropagation();
+  });
+
+  // Function to close the dropdown
+  function closeDropdown(event) {
     if (!dropdown.contains(event.target) && event.target !== button) {
       dropdown.remove();
+      document.body.removeEventListener('click', closeDropdown);
     }
-  });
-  
+  }
+
+  // Add event listener to close the dropdown when clicking outside
+  document.body.addEventListener('click', closeDropdown);
+
+  // Stop propagation to prevent immediate closing
   event.stopPropagation();
 });
+
+
+
+
 
 
 
