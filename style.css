@@ -343,7 +343,7 @@ body {
 
     z-index: 50;
     flex: 1; 
-    padding: 75px 20px 20px 20px;
+    padding: 35px 20px 20px 10px;
     box-sizing: border-box;
   }
   
@@ -1023,31 +1023,32 @@ body {
       /* Navbar styles */
       .navbar {
         font-family: 'Manrope', sans-serif;
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 400;
     padding-top: 0 !important;
-    padding-bottom: 0 !important;
+    padding-bottom: 0px;
         z-index: 3;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: white;
+        background-color: black,
         padding-left: 25px;
         padding-right: 25px;
       }
   
       .navbar img {
         padding-left: 10px;
-        max-width: 220px;
-        height: 120px;
+        max-width: 230px;
+        height: 130px;
       }
   
       .nav-list {
         z-index: 3;
         letter-spacing:0.6px;
-        font-weight: 5s00;        display: flex;
+        font-weight: 500;        display: flex;
         list-style: none;
         margin: 0;
+      
         padding: 0;
       }
   
