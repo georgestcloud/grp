@@ -47,7 +47,7 @@ if (isMobileBrowserDesktopMode()) {
   var carouselContainer = document.getElementById("demo"); // Assuming "demo" is the ID of the carousel container
   var carouselImages = document.querySelectorAll(".carousel-item img");
   carouselImages.forEach(function(image) {
-    image.style.height = "1110px"; // Adjust height as needed
+    image.style.height = "950px"; // Adjust height as needed
   });
   carouselContainer.style.height = "auto"; // Reset height to auto to accommodate the increased image height
 }
@@ -171,37 +171,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
       const modalBody = document.createElement("div");
       modalBody.classList.add("modal-body");
       modalBody.innerHTML = ` 
-          <p>
-              <span>G</span><span>R</span><span>E</span><span>E</span><span>N</span>
-              <span>I</span><span>N</span><span>F</span><span>R</span><span>A</span><span>S</span><span>T</span><span>R</span><span>U</span><span>C</span><span>T</span><span>U</span><span>R</span><span>E</span>
-              <span>A</span><span>N</span><span>D</span>
-              <span>P</span><span>O</span><span>W</span><span>E</span><span>R</span>
-              <span>I</span><span>N</span><span>V</span><span>E</span><span>S</span><span>T</span><span>M</span><span>E</span><span>N</span><span>T</span><span>S</span>
-              <span>P</span><span>L</span><span>C</span>
-               is a company dedicated to advancing sustainable energy solutions. Their current flagship initiative involves the comprehensive development and management of a Solar Photovoltaic (PV) Farm in Mill City Clean Energy City, Iwopin, Ogun State. This project will feature a 250 MWA solar farm and a 63 MW/126 MWh Battery Energy Storage System (BESS).
-              <br> The company's scope of work encompasses the entire project lifecycle, including design, construction, financing, commissioning, operation, and maintenance.
-          </p>
-          <p>
-              A key component of the project is its integration with the West African Power Pool through a 440V HVDC Submarine Transmission cable, linking Iwopin, Nigeria, to Sakete, Benin Republic, in its first phase. <br> Additionally, the initiative includes the establishment of a Marine Wildlife Conservation Centre and a Biogas Generation Project utilizing Water Hyacinth Biomass (WHB), in collaboration with the World Wildlife Fund.
-          </p>
-          <p>
-              The Mill City Solar PV Project aims to reduce reliance on carbon-based fuels, achieve renewable energy targets, and lower greenhouse gas emissions, reflecting the company's commitment to environmental sustainability and clean energy.
-          </p>
-
-          <P> The power generation plant is to be connected to the West African Power Pool via a 440V HVDC Submarine Transmission cable that will originate from Iwopin, Nigeria and terminate in Sakete, Benin Republic in the first phase. </p>
-
-
-          <p>The Project will also feature a Marine Wildlife Conservation Centre and a Biogas Generation Project to be driven by (WHB) Water Hyacinth Biomass in partnership with the World Wildlife Fund.   </p>
-
-    
-          <br>
-          <b>The Mill City Solar PV Project will :</b><br>
-          <ul>
-            <li>Reduce energy dependence on carbon-based fuels.</li>
-            <li>Meet renewable energy targets.</li>
-            <li>Reduce greenhouse gas emission rates.</li>
-           
-          </ul>
+          
           
     
 
@@ -522,6 +492,9 @@ document.getElementById('showDropdownBtn').addEventListener('click', function(ev
     }
   });
 
+
+
+  
   // Adjust the menu button visibility based on screen size and device mode
   function adjustMenuVisibility() {
     if (window.innerWidth <= 800 || (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i) && window.innerWidth > 800)) {
@@ -541,25 +514,17 @@ document.getElementById('showDropdownBtn').addEventListener('click', function(ev
 
 
 
+  
+  document.querySelector('.custom-container').addEventListener('mousemove', function(e) {
+    const container = this;
+    const rect = container.getBoundingClientRect();
+    const mouseX = e.clientX - rect.left;
+    const mouseY = e.clientY - rect.top;
 
+    // Calculate the movement range
+    const moveX = (mouseX / rect.width - 0.5) * 70; // Adjust multiplier for effect strength
+    const moveY = (mouseY / rect.height - 0.5) * 70; // Adjust multiplier for effect strength
 
-
-
-
-
-
-
-
-    document.querySelector('.custom-container').addEventListener('mousemove', function(e) {
-      const container = this;
-      const rect = container.getBoundingClientRect();
-      const mouseX = e.clientX - rect.left;
-      const mouseY = e.clientY - rect.top;
-
-      // Calculate the movement range
-      const moveX = (mouseX / rect.width - 0.5) * 100; // Adjust multiplier for effect strength
-      const moveY = (mouseY / rect.height - 0.5) * 100; // Adjust multiplier for effect strength
-
-      // Set the background position to follow the mouse movement
-      container.style.backgroundPosition = `${50 + moveX}% ${50 + moveY}%`;
-    });
+    // Set the background position to follow the mouse movement
+    container.style.backgroundPosition = `${40 + moveX}% ${40 + moveY}%`;
+  });
