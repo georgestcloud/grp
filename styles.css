@@ -41,7 +41,7 @@ font-weight: bold;
 
    @media (max-width: 800px) {
       h1 {
-        font-size: 15px; /* Font size for screens smaller than 800px */
+        font-size: 20px; /* Font size for screens smaller than 800px */
       }
     }
 
