@@ -447,13 +447,10 @@ padding-bottom: 25px;}
   height: 100%;
   max-height: 250px;
   max-width: 350px;
-  
+box-shadow: 0 4px 16px rgba(171, 89, 67, 0.8);  
   transition: box-shadow 0.3s ease;
 }
 
-.hoverable-image:hover {
-  box-shadow: 0 4px 16px rgba(171, 89, 67, 0.8);
-}
 
 
 
