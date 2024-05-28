@@ -243,6 +243,7 @@ font-weight: bold;
 
 
   .sparrow {
+    font-size: 15px;
     flex: 0 0 35%;
     padding: 20px;
     box-sizing: border-box;
@@ -435,7 +436,8 @@ text-align: center;}
 
 
 
-.dove { text-align: center;}
+.dove { text-align: center;
+padding-bottom: 25px;}
 
 
 .hoverable-image {
