@@ -36,9 +36,14 @@ font-weight: bold;
 }
 
 .sharon { padding: 20px;
+         font-size: 14px;
 }
 
-
+   @media (max-width: 800px) {
+      h1 {
+        font-size: 15px; /* Font size for screens smaller than 800px */
+      }
+    }
 
 
 
