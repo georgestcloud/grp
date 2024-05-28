@@ -215,10 +215,12 @@ body {
   }
   
   .custom-container {
+    box-shadow: 0 4px 16px rgba(171, 89, 67, 0.8);
+
     z-index: 0;
       position: relative;
       overflow: hidden; 
-      background-image: url('pol.jpg'); 
+      background-image: url('sub.webp'); 
       background-size: cover; 
       border-top: 35px; 
   }
