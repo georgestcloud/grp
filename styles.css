@@ -557,3 +557,74 @@ text-align: center;}
 .custom-list li a:hover {
   color: gold; /* Change color to gold on hover */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .elephant {
+            width: 350px;
+            max-height: 80vh;
+            overflow-y: auto;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 20px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            z-index: 2000;
+        }
+        .lion {
+            background-color: #Ab5943;
+            border-radius: 20px;
+            border: 0px;
+            padding: 10px 20px;
+            color: white;
+            cursor: pointer;
+        }
+        .danger-button {
+            background-color: red;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+        .dropdown-item-text {
+            padding: 10px 0;
+        }
+        .dropdown-item-text h5 {
+            margin: 0 0 10px;
+        }
+        hr {
+            margin: 10px 0;
+        }
