@@ -1180,4 +1180,9 @@ body {
       background-color: #D6A295;
     }
   
+      @media (max-width: 800px), (hover: none) {
+      .dropdown-content.show {
+        display: block;
+      }
+    }
   
