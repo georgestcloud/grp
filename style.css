@@ -1,6 +1,6 @@
 body {
-      font-family: Arial, Helvetica, sans-serif;
-  color: black;
+font-family: HelvLight;
+      color: black;
         line-height: 1.5; 
  text-align: justify;
     font-size: 14px;
@@ -762,8 +762,7 @@ font-size: 14px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: Arial, Helvetica, sans-serif;  }
-  
+font-family: HelvLight;  
   .counter-number-wrapper {
     display: flex;
     align-items: baseline;
@@ -1029,8 +1028,7 @@ font-size: 14px;
   
       /* Navbar styles */
       .navbar {
-    font-family: Arial, Helvetica, sans-serif;
-        font-size: 16px;
+font-family: HelvLight;        font-size: 16px;
         font-weight: 400;
     padding-top: 0 !important;
     padding-bottom: 0px;
