@@ -626,22 +626,3 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-
-document.addEventListener("DOMContentLoaded", function() {
-  const text = "Corporate Social Responsibility (CSR) Initiatives";
-  const delay = 100; // Decreased delay between each letter
-  const container = document.getElementById("leg");
-  
-  let index = 0;
-  
-  function addLetter() {
-      if (index < text.length) {
-          container.textContent += text[index];
-          index++;
-          setTimeout(addLetter, delay);
-      }
-  }
-  
-  addLetter();
-});
-
