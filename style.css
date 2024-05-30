@@ -2,7 +2,7 @@ body {
       font-family: Arial, Helvetica, sans-serif;
   color: black;
         line-height: 1.5; 
-
+ text-align: justify;
     font-size: 14px;
     font-weight: 400;
 
@@ -65,6 +65,7 @@ body {
   
   .flex-item-right {
           line-height: 1.5; 
+         text-align: justify;
     font-size: 14px;
     background-color: white;
     padding: 30px 50px 0px 30px;
@@ -334,6 +335,7 @@ body {
   
   
   .left-panel {
+         text-align: justify;
     justify-content: center;
       align-items: center;
     flex: 0 0 50%;
@@ -342,6 +344,7 @@ body {
   }
   
   .right-panel {
+         text-align: justify;
     font-weight: 400;
 font-size: 14px;
           line-height: 1.5; 
