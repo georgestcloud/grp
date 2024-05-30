@@ -602,7 +602,7 @@ document.getElementById('showDropdownBtn').addEventListener('click', function(ev
 
 document.addEventListener("DOMContentLoaded", function() {
   const text = "Empowering  a  Greener  Future.";
-  const delay = 250; // Decreased delay between each letter
+  const delay = 200; // Decreased delay between each letter
   const container = document.getElementById("koko");
   
   let index = 0;
