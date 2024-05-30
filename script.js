@@ -591,3 +591,29 @@ document.getElementById('showDropdownBtn').addEventListener('click', function(ev
     // Set the background position to follow the mouse movement
     container.style.backgroundPosition = `${40 + moveX}% ${40 + moveY}%`;
   });
+
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const text = "Empowering  a  Greener  Future.";
+  const delay = 90; // Decreased delay between each letter
+  const container = document.getElementById("koko");
+  
+  let index = 0;
+  
+  function addLetter() {
+      if (index < text.length) {
+          container.textContent += text[index];
+          index++;
+          setTimeout(addLetter, delay);
+      }
+  }
+  
+  addLetter();
+});
