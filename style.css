@@ -10,6 +10,14 @@ font-weight: 400;
 }
 
 
+@media screen and (max-width: 800px) {
+  .elephant-navbar img {
+    max-width: 190px;
+    padding-right:10px;
+    max-height: 120px;
+  }
+}
+
 
 .kala { color: #B8705D; }
 
