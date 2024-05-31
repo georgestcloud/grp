@@ -23,6 +23,12 @@ font-weight: 400;
   box-shadow: 0 4px 8px 0 #Ab5943; /* Adds the shadow effect */
 }
 
+ @media (max-width: 800px) {
+            .lung {
+                height: 290px;
+            }
+        }
+
 
 
 
