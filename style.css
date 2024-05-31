@@ -15,6 +15,8 @@ font-weight: 400;
 
 @media (max-width: 800px) {
 .eze {
+  padding-left: 35px;
+  padding-right: 35px;
   font-size: 15px;
   padding: 12px;
 }
@@ -25,7 +27,7 @@ font-weight: 400;
 body {
   font-size: 14px;
   overflow-x: hidden; 
-}
+    }
 }
 
 
@@ -83,6 +85,10 @@ flex: 50%;
 /* Responsive layout - makes a one column-layout instead of two-column layout */
 @media (max-width: 800px) {
 .flex-container {
+  
+  padding-left: 35px;
+  padding-right: 35px;
+
   justify-content: center;
   flex-direction: column;
 }
@@ -360,6 +366,10 @@ box-sizing: border-box;
 
 @media (max-width: 800px) {
 .asake {
+  
+  padding-left: 35px;
+  padding-right: 35px;
+
     flex-direction: column; /* Stack items vertically */
 }
 .left-panel {
@@ -393,10 +403,17 @@ border-radius: 20px;
 
 @media (max-width: 800px) {
 .card img {
-    width: 300px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+    width: 350px;
     height: 200px;
 }
-.card { width: 300px;
+.card {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+   width: 350px;
    height: 200px;
   }
 
@@ -1174,3 +1191,4 @@ padding-bottom: 0px;
 .elephant-menu-content {
   right: 25px;
 }
+
