@@ -1,3 +1,4 @@
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 color: black;
@@ -5,9 +6,34 @@ color: black;
 text-align: justify;
 font-size: 14px;
 font-weight: 400;
-
-
 }
+
+
+.heart {
+  width: 100%;
+  max-width: 100%; /* Ensures the div doesn't exceed the parent's width */
+  overflow: hidden; /* Ensures any overflow is hidden */
+  position: relative; /* Needed for the pseudo-element */
+}
+.lung {
+  width: 100%;
+  max-height: 370px;
+  height: 100%;
+   /* Ensures the image covers the entire area without stretching */
+  box-shadow: 0 4px 8px 0 #Ab5943; /* Adds the shadow effect */
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width: 800px) {
@@ -84,13 +110,7 @@ padding: 30px 50px 0px 30px;
 flex: 50%;
 }
 
-@media (max-width: 799px) {
-  .carousel-item img {
-      height: 270px; 
-  }
 
-
-}
 
 /* Responsive layout - makes a one column-layout instead of two-column layout */
 @media (max-width: 800px) {
@@ -116,61 +136,8 @@ flex: 50%;
 }
 
 
-.carousel-item img {
-  height: 290px;
-}
 
 
-
-.carousel-swipe {
-position: absolute;
-top: 50%;
-transform: translateY(-50%);
-background: none;
-border: none;
-color: #Ab5943; 
-font-size: 35px; 
-cursor: pointer;
-z-index: 999;
-width: 40px; 
-height: 40px;
-line-height: 40px;
-}
-
-.carousel-swipe-left {
-left: 13px; 
-}
-
-.carousel-swipe-right {
-right: 13px;
-z-index: 0;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-visibility: visible;
-}
-
-.carousel-pagination {
-border-top: 10px white;
-text-align: center;
-margin-top: 10px;
-}
-
-.carousel-pagination button {
-border-radius: 50%;
-width: 10px;
-height: 10px;
-margin-right: 5px;
-border: none;
-background-color: silver;
-cursor: pointer;
-}
-
-.carousel-pagination button.active {
-background-color:  #D6A295;
-border-color:  #D6A295;
-}
 
 .image {
   box-shadow: 0 4px 16px rgba(171, 89, 67, 0.8);
@@ -275,12 +242,6 @@ box-sizing: border-box;
 }
 }
 
-
-
-.carousel-inner {
-position: relative;
-z-index: 1; 
-}
 
 
 
