@@ -303,7 +303,7 @@ body {
       left: 0;
       width: 100%;
       height: 100%;
-      background-image: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXV1dW5zOWdjZTJ3NnF5eHYxdGRzdjQybGo4cXR6NXUyajlxaHJqZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/f94coCqt6CgXMJs2FR/giphy.webp');
+      background-image: url('f.jpg');
       background-size: cover;
       background-position: center;
       filter: blur(1px); /* Adjust blur intensity */
@@ -328,6 +328,8 @@ body {
   
   
     .george {
+      position: relative;
+      z-index: 999;
       display: flex;
       flex-wrap: wrap;
     }
@@ -529,11 +531,22 @@ body {
   
   
   .odu {padding-left: 20px;
-  padding-right: 20px;}
+    position: relative;
+    z-index: 999;
+     background-color: rgba(255, 255, 255, 0); /* Transparent background */
+ 
+      padding-right: 20px;}
+  
+      @media (max-width: 800px) {
+        .odu, .george {
+          width: 100%;
+        }
+      }
   
   
-  
-  
+      .dove strong {
+        font-weight: bold;
+      }
   
   .dove { text-align: center;
   padding-bottom: 20px;}
@@ -679,140 +692,229 @@ body {
   
   
   
+
+
+
+
+
+
+
+.elephant-nav-list a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  position: relative; /* Added position relative for hover effect */
+}
+
+.elephant-nav-list a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #Ab5943;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.elephant-nav-list a:hover::after {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+/* Add right spacing of 25px to the dropdown content */
+
+
+
+
+
+.elephant-navbar {
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 25px;
+  padding-left: 10px;
+  background-color: #fff;
+}
+.elephant-nav-list {
+  z-index: 999;
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+.elephant-nav-list li {
+  display: inline;
+}
+.elephant-nav-list a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  line-height: 20px;
+  position: relative; /* Added position relative for hover effect */
+}
+.elephant-nav-list a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #Ab5943;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+.elephant-nav-list a:hover::after {
+  visibility: visible;
+  transform: scaleX(1);
+}
+.elephant-dropdown {
+  position: relative;
+  display: inline-block;
+}
+.elephant-dropdown-content {
+  width: 200px;
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 17px;
+  background-color: white;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.elephant-dropdown-content a {
+  z-index: 3;
+  color: black;
+  padding: 10px 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.elephant-dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+.elephant-dropdown:hover .elephant-dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 800px) {
+ .elephant-menu-button {
   
-  
-  
-  
-          .elephant {
-              width: 350px;
-              max-height: 80vh;
-              overflow-y: auto;
-              position: fixed;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%);
-              display: none;
-              background-color: white;
-              border: 1px solid #ccc;
-              padding: 20px;
-              box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-              z-index: 2000;
-          }
-          .lion {
-              background-color: #D6A295;
-              border-radius: 20px;
-              border: 0px;
-              padding: 10px 20px;
-              color: white;
-              cursor: pointer;
-          }
-          .danger-button {
-              background-color: red;
-              color: white;
-              padding: 10px;
-              border: none;
-              border-radius: 5px;
-              position: absolute;
-              top: 10px;
-              right: 10px;
-              cursor: pointer;
-          }
-          .dropdown-item-text {
-              padding: 10px 0;
-          }
-          .dropdown-item-text h5 {
-              margin: 0 0 10px;
-          }
-          hr {
-              margin: 10px 0;
-          }
-  
-  
-  
-  
-  .dropbtn {
-    background-color: white;
-    color: black;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    }
-    
-    .dropdown {
-    position: relative;
-    display: inline-block;
-    }
-    
-    .dropdown-content {
+    padding-right:0px;
+   }
+}
+
+
+.elephant-menu-button {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 35px;
+  color: #Ab5943;
+  cursor: pointer;
+}
+@media (max-width: 800px) {
+  .elephant-nav-list {
+    z-index: 999;
     display: none;
+    flex-direction: column;
+    width: auto;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    }
-    
-    .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
+    top: 60px; /* Adjust according to your navbar height */
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(54, 36, 36, 0.2);
+    height: auto;
+  }
+  .elephant-nav-list.show {
+    display: flex;
+  }
+  .elephant-menu-button {
     display: block;
-    }
-    
-    .dropdown-content a:hover {background-color: #AB5943}
-    
-    .dropdown:hover .dropdown-content {
-    display: block;
-    }
-    
-    .dropdown:hover .dropbtn {
-    background-color: white;
-    }
+    padding-right: 0px;
+  }
+}
+.elephant-navbar img {
+  max-width: 220px;
+  max-height: 130px;
+}
+.elephant-dropdown:hover .elephant-dropdown-content {
+  display: block;
+}
+.elephant-dropdown:hover .elephant-dropbtn {
+  background-color: white;
+}
+.elephant-dropbtn {
+  background-color: white;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.elephant-dropdown {
+  position: relative;
+  display: inline-block;
+}
+.elephant-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.elephant-dropdown-content a {
+  color: black;
+  z-index: 999;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.elephant-dropdown-content a:hover {
+  background-color: #AB5943;
+}
+.elephant-dropdown:hover .elephant-dropdown-content {
+  display: block;
+}
+.elephant-dropdown:hover .elephant-dropbtn {
+  background-color: white;
+}
+/* Add right spacing of 25px to the dropdown content */
+.elephant-menu-content {
+  right: 25px;
+}
+
+
+
+
+
+
+
+
+      
+.custom-container {
+  box-shadow: 0 4px 16px rgba(171, 89, 67, 0.8);
+  
+  z-index: 0;
+    position: relative;
+    overflow: hidden; 
+    background-image: url('https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/media/images/manatee-yumyum.gif'); 
+    background-size: cover; 
+    border-top: 35px; 
+  }
+  
+  .container-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #D6A295;
+  opacity: 0.5;
+  }
   
   
-  
-  
-  
-  
-      .dropdown-content {
-        width: 200px;
-        display: none;
-        position: absolute;
-        right: 10px;
-        top: 30px;
-        background-color: white;
-        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-      }
-    
-      .dropdown-content a {
-          z-index: 3;
-        color: black; 
-        padding: 10px 12px 16px;
-        text-decoration: none;
-        display: block;
-      }
-    
-      .dropdown-content a:hover {
-        background-color: #D6A295;
-      }
-    
-      /* Responsive styles */
-      @media (max-width: 800px) {
-        .nav-list {
-          z-index: 999;
-          display: none;
-        }
-        .menu-button {
-          display: block;
-        }
-      }
-    
-      @media (max-width: 800px), (hover: none) {
-        .dropdown-content.show {
-          display: block;
-        }
-      }
-    
-    
