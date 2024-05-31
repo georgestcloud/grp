@@ -12,9 +12,9 @@ font-weight: 400;
 
 @media screen and (max-width: 800px) {
   .elephant-navbar img {
-    max-width: 190px;
-    padding-right:10px;
-    max-height: 120px;
+    max-width: 175px;
+    padding-left:0px;
+    max-height: 115px;
   }
 }
 
@@ -1117,6 +1117,15 @@ padding-bottom: 0px;
 .elephant-dropdown:hover .elephant-dropdown-content {
   display: block;
 }
+
+@media screen and (max-width: 800px) {
+ .elephant-menu-button {
+  
+    padding-right:0px;
+   }
+}
+
+
 .elephant-menu-button {
   display: none;
   background: none;
