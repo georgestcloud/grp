@@ -403,15 +403,10 @@ border-radius: 20px;
 
 @media (max-width: 800px) {
 .card img {
-  padding-left: 25px;
-  padding-right:25px;
   width: 300px;
     height: 200px;
 }
 .card {
-  
-  padding-left: 25px;
-  padding-right:25px;
   width: 300px;
    height: 200px;
   }
