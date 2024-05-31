@@ -13,7 +13,9 @@ font-weight: 400;
 @media screen and (max-width: 800px) {
   .elephant-navbar img {
     max-width: 175px;
-    padding-left:0px;
+    padding: 0px;
+    padding-left: 0px;
+    margin: 0px;
     max-height: 115px;
   }
 }
@@ -1043,17 +1045,18 @@ padding-bottom: 0px;
 }
 
 /* Add right spacing of 25px to the dropdown content */
-.elephant-menu-content {
-  right: 25px;
-}
+
+
+
+
 
 .elephant-navbar {
   z-index: 999;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-right: 35px;
-  padding-left: 20px;
+  padding-right: 25px;
+  padding-left: 10px;
   background-color: #fff;
 }
 .elephant-nav-list {
@@ -1152,11 +1155,12 @@ padding-bottom: 0px;
   }
   .elephant-menu-button {
     display: block;
+    padding-right: 0px;
   }
 }
 .elephant-navbar img {
-  max-width: 250px;
-  max-height: 150px;
+  max-width: 220px;
+  max-height: 130px;
 }
 .elephant-dropdown:hover .elephant-dropdown-content {
   display: block;
@@ -1203,4 +1207,3 @@ padding-bottom: 0px;
 .elephant-menu-content {
   right: 25px;
 }
-
