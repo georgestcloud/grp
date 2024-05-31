@@ -303,7 +303,7 @@ body {
       left: 0;
       width: 100%;
       height: 100%;
-      background-image: url('f.jpg');
+      background-image: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXV1dW5zOWdjZTJ3NnF5eHYxdGRzdjQybGo4cXR6NXUyajlxaHJqZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/f94coCqt6CgXMJs2FR/giphy.webp');
       background-size: cover;
       background-position: center;
       filter: blur(1px); /* Adjust blur intensity */
