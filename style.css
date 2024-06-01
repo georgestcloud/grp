@@ -672,6 +672,7 @@ padding-bottom: 0px;
 
 
 
+
 @media (max-width: 800px) {
   .main-container {
     padding-left: 0px;
@@ -682,8 +683,6 @@ padding-bottom: 0px;
   }
 
 
-  .owl-carousel .item img { max-width: 70%;
-  height: 250px;}
   
   .right-section, .left-section {
       width: 100%;
@@ -715,8 +714,9 @@ padding-bottom: 0px;
 .owl-carousel .item img {
   border-radius: 25px;
   width: 100%;
+  
   max-width: 450px;
-  height: 350px;
+  height: 450px;
   object-fit: cover;
   display: block;
   margin: 0 auto; /* Center the images */
@@ -1064,5 +1064,4 @@ padding-bottom: 0px;
 }
 
 .dog { font-size: 20px}
-
 
