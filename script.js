@@ -124,7 +124,17 @@ adjustCarouselCaptionStyle();
 
 
 
-
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+      items: 1, // Show one item at a time
+      loop: true,
+      margin: 10,
+      nav: true,
+      autoplay: true, // Enable auto-play
+      autoplayTimeout: 3000, // Change every 3 seconds
+      autoplayHoverPause: true // Pause on hover
+  });
+});
 
 
 
