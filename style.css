@@ -9,49 +9,6 @@ font-weight: 400;
 }
 
 
-.heart {
-  width: 100%;
-  max-width: 100%; /* Ensures the div doesn't exceed the parent's width */
-  overflow: hidden; /* Ensures any overflow is hidden */
-  position: relative; /* Needed for the pseudo-element */
-}
-.lung {
-  width: 100%;
-  max-height: 370px;
-  height: 100%;
-   /* Ensures the image covers the entire area without stretching */
-  box-shadow: 0 4px 8px 0 #Ab5943; /* Adds the shadow effect */
-}
-
- @media (max-width: 800px) {
-            .lung {
-                height: 290px;
-            }
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 800px) {
-  .elephant-navbar img {
-    max-width: 175px;
-    padding: 0px;
-    padding-left: 0px;
-    margin: 0px;
-    max-height: 115px;
-  }
-}
-
 
 .kala { color: #B8705D; }
 
@@ -459,97 +416,6 @@ padding: 20px;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .btn-pill {
   background-color: #Ab5943;
   color: white;
@@ -632,83 +498,6 @@ padding: 20px;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.dog { font-size: 20px}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .counter {
 display: flex;
 flex-direction: column;
@@ -737,46 +526,6 @@ margin-top: 0px;
 font-size: 1em;
 color: black;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -836,66 +585,11 @@ z-index: 3;
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .elementor-icon {
 width: 80px; /* Adjust size as needed */
 height: 70px; 
 color: white;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .pill-button {
@@ -971,6 +665,52 @@ color: black;
 font-size: 25px;
 padding-bottom: 0px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1174,3 +914,40 @@ padding-bottom: 0px;
 .elephant-menu-content {
   right: 25px;
 }
+
+
+
+
+@media screen and (max-width: 800px) {
+  .elephant-navbar img {
+    max-width: 175px;
+    padding: 0px;
+    padding-left: 0px;
+    margin: 0px;
+    max-height: 115px;
+  }
+}
+
+
+
+
+
+
+.heart {
+  width: 100%;
+  max-width: 100%; /* Ensures the div doesn't exceed the parent's width */
+  overflow: hidden; /* Ensures any overflow is hidden */
+  position: relative; /* Needed for the pseudo-element */
+}
+.lung {
+  width: 100%;
+  max-height: 370px;
+  object-fit: cover;
+  height: 100%;
+   /* Ensures the image covers the entire area without stretching */
+  box-shadow: 0 4px 8px 0 #Ab5943; /* Adds the shadow effect */
+}
+
+.dog { font-size: 20px}
+
+
