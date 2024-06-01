@@ -666,7 +666,11 @@ font-size: 25px;
 padding-bottom: 0px;
 }
 
+.custom-hr {
+  width: 50%; /* Adjust the percentage to change the length */
+}
 
+.bab-hr { width:65%;}
 
 
 .main-container {
@@ -1023,8 +1027,8 @@ padding-bottom: 0px;
 
 .heart {
   width: 100%;
-  max-width: 100%; /* Ensures the div doesn't exceed the parent's width */
-  overflow: hidden; /* Ensures any overflow is hidden */
+  max-width: 100%; 
+  overflow: hidden; 
   position: relative; /* Needed for the pseudo-element */
 }
 .lung {
@@ -1032,8 +1036,8 @@ padding-bottom: 0px;
   max-height: 370px;
   object-fit: cover;
   height: 100%;
-   /* Ensures the image covers the entire area without stretching */
-  box-shadow: 0 4px 8px 0 #Ab5943; /* Adds the shadow effect */
+
+  box-shadow: 0 4px 8px 0 #Ab5943; 
 }
 
 .dog { font-size: 20px}
