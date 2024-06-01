@@ -819,7 +819,6 @@ padding-bottom: 0px;
 .elephant-nav-list a {
   text-decoration: none;
   color: #000;
-  font-weight: bold;
   position: relative; /* Added position relative for hover effect */
 }
 
@@ -870,7 +869,6 @@ padding-bottom: 0px;
 .elephant-nav-list a {
   text-decoration: none;
   color: #000;
-  font-weight: bold;
   line-height: 20px;
   position: relative; /* Added position relative for hover effect */
 }
