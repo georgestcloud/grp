@@ -1057,7 +1057,6 @@ padding-bottom: 0px;
 .lung {
   width: 100%;
   max-height: 370px;
-  object-fit: cover;
   height: 100%;
 
   box-shadow: 0 4px 8px 0 #Ab5943; 
