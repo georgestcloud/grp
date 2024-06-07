@@ -343,17 +343,16 @@ border-radius: 20px;
 .card img {
   object-fit: cover;
   
-  width: 350px;
-    height: 250px;
+  width: 275px;
+    height: 200px;
 }
 .card {
-  margin-left: 15px;
-
+  
   display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
-  width: 350px;
+  width: 275px;
    height: 200px;
   }
 
