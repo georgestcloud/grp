@@ -186,7 +186,7 @@
 
 
 
-
+<div class="messi"></div>
 
 
 
@@ -232,7 +232,7 @@
        <ul class="custom-list">
           <li><a href="index.html" style="font-size: 15px;">Home</a></li>
           <li><a href="csr.html" style="font-size: 15px;">Social Impact</a></li>
-          <li><a href="about.html" target="_blank" style="font-size: 15px;">About Us</a></li>
+          <li><a href="about.html" style="font-size: 15px;">About Us</a></li>
           <li><a href="pac.html" style="font-size: 15px;"> Privacy & Cookies Policy</a></li>
           <li><a href="tac.html" style="font-size: 15px;"> Terms and Conditions</a></li>
           </ul> 
@@ -258,6 +258,29 @@
 
 
 
+<script src="cloud.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      const messiDiv = document.querySelector('.messi');
+
+      messiDiv.addEventListener('mouseenter', function(event) {
+          const rect = messiDiv.getBoundingClientRect();
+          const mouseY = event.clientY - rect.top;
+
+          if (mouseY < rect.height / 2) {
+              // Mouse entered from above
+              messiDiv.style.transform = 'scale(1.1)';
+          } else {
+              // Mouse entered from below
+              messiDiv.style.transform = 'scale(0.9)';
+          }
+      });
+
+      messiDiv.addEventListener('mouseleave', function() {
+          messiDiv.style.transform = 'scale(1)';
+      });
+  });
+</script>
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
