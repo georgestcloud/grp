@@ -304,8 +304,8 @@ box-sizing: border-box;
 @media (max-width: 800px) {
 .asake {
   
-  padding-left: 35px;
-  padding-right: 35px;
+  padding-left: 15px;
+  padding-right: 15px;
 
     flex-direction: column; /* Stack items vertically */
 }
@@ -341,12 +341,19 @@ border-radius: 20px;
 
 @media (max-width: 800px) {
 .card img {
+  object-fit: cover;
   
-  width: 250px;
-    height: 200px;
+  width: 350px;
+    height: 250px;
 }
 .card {
-  width: 250px;
+  margin-left: 35px;
+
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
    height: 200px;
   }
 
